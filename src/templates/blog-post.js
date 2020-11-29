@@ -1,10 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -28,26 +25,15 @@ class BlogPostTemplate extends React.Component {
             </p>
           </header>
           <section
-            className="markdown"
+            className="prose lg:prose-xl"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
           <hr className="h-px mb-8" />
-          <footer>
-            <Bio />
-          </footer>
+          <footer>{/* <Bio /> */}</footer>
         </article>
 
         <nav>
-          <ul
-            className="flex flex-wrap justify-between mb-8"
-            // style={{
-            //   display: `flex`,
-            //   flexWrap: `wrap`,
-            //   justifyContent: `space-between`,
-            //   listStyle: `none`,
-            //   padding: 0,
-            // }}
-          >
+          <ul className="flex flex-wrap justify-between mb-8">
             <li>
               {previous && (
                 <Link

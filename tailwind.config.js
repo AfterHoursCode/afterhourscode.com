@@ -3,12 +3,9 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 module.exports = {
   theme: {
     extend: {
-      fontFamily: {
-        serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
-      },
+      sans: ["Inter var", ...defaultTheme.fontFamily.sans],
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 }

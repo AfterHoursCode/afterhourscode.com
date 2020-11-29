@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog TailwindCSS`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-tailwindcss-demo.netlify.com/`,
+    title: `Level-up after hours.`,
+    author: `Brandon Klotz`,
+    description: `A journey in coding and building products.`,
+    siteUrl: `https://www.afterhourscode.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `afterhourscode`,
     },
   },
   plugins: [
@@ -31,6 +31,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              tracedSVG: true,
             },
           },
           {
@@ -68,12 +69,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-plugin-postcss`,
   ],
 }
